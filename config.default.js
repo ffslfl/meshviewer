@@ -80,10 +80,10 @@ module.exports = function () {
         'name': 'node.update',
         'value': 'Autoupdate'
       },
-      {
-        'name': 'node.domain',
-        'value': 'Domain'
-      },
+      //{
+      //  'name': 'node.domain',
+      //  'value': 'Domain'
+      //},
       {
         'name': 'node.clients',
         'value': 'Clients'
