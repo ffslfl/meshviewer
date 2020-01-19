@@ -44,9 +44,10 @@ module.exports = function () {
     ],
     // Array of data provider are supported
     'dataPath': [
-      'https://regensburg.freifunk.net/data/'
+      // FIXME Placeholder
+      'https://map.ffslfl.net/lc_dataproxy/gw1/'
     ],
-    'siteName': 'Freifunk Regensburg',
+    'siteName': 'Freifunk Schleswig-Flensburg',
     'mapLayers': [
       {
         'name': 'Freifunk Regensburg',
@@ -81,32 +82,11 @@ module.exports = function () {
         }
       },
       {
-        'name': 'HERE',
-        // Please use your own API key - Free plan is on right side after the pay plans
-        'url': 'https://{s}.base.maps.api.here.com/maptile/2.1/maptile/newest/normal.day/{z}/{x}/{y}/256/png8?app_id=YOUR_KEY&app_code=YOUR_CODE&lg=deu',
-        'config': {
-          'attribution': 'Map &copy; 1987-2014 <a href="http://developer.here.com">HERE</a>',
-          'subdomains': '1234',
-          'maxZoom': 20
-        }
-      },
-      {
         'name': 'Esri.WorldImagery',
         'url': '//server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
         'config': {
           'maxZoom': 20,
           'attribution': 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
-        }
-      },
-      {
-        'name': 'HERE.hybridDay',
-        // Please use your own API key - Free plan is on right side after the pay plans
-        'url': 'https://{s}.aerial.maps.api.here.com/maptile/2.1/maptile/newest/{variant}/{z}/{x}/{y}/256/png8?app_id=YOUR_KEY&app_code=YOUR_CODE&lg=deu',
-        'config': {
-          'attribution': 'Map &copy; 1987-2014 <a href="http://developer.here.com">HERE</a>',
-          'subdomains': '1234',
-          'variant': 'hybrid.day',
-          'maxZoom': 20
         }
       }
     ],
@@ -114,33 +94,29 @@ module.exports = function () {
     'fixedCenter': [
       // Northwest
       [
-        49.3522,
-        11.7752
+        55.108229702,
+        8.316650391
       ],
       // Southeast
       [
-        48.7480,
-        12.8917
+        54.025144,
+        10.810968
       ]
     ],
     'domainNames': [
       {
-        'domain': 'ffrgb-bat15',
-        'name': 'Regensburg'
-      },
-      {
-        'domain': 'ffrgb',
-        'name': 'Regensburg'
+        'domain': 'slfl',
+        'name': 'Schleswig-Flensburg'
       }
     ],
     'linkList': [
       {
         'title': 'Impressum',
-        'href': '/verein/impressum/'
+        'href': 'https://schleswig-flensburg.freifunk.net/kontakt/impressum/'
       },
       {
         'title': 'Datenschutz',
-        'href': '/verein/datenschutz/'
+        'href': 'https://schleswig-flensburg.freifunk.net/kontakt/datenschutz/'
       }
     ]
   };
